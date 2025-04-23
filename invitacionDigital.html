@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Victoria Mis XV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Helvetica Neue', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#f6f0e9] text-[#a88f4d]">
+    <!-- Portada -->
+    <section class="relative h-screen bg-cover bg-center" style="background-image: url('/fondo.jpg');">
+        <img src="fondo.jpeg" alt="fondito"  class="absolute top-0 left-0 w-full h-full object-cover z-[-1]">
+
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-4">
+        <h1 class="text-5xl font-bold tracking-widest">VICTORIA</h1>
+        <h2 class="text-3xl mt-2">MIS XV</h2>
+        <p class="mt-4 text-lg tracking-widest">¡ESTÁS INVITADO!</p>
+      </div>
+    </section>
+
+    <!-- Cuenta regresiva -->
+    <section class="flex flex-col items-center py-16">
+      <img src="imagen2.jpeg" class="w-64 mb-8 rounded-lg shadow-lg" />
+      <div class="text-center">
+        <h2 class="text-3xl font-bold mb-4">¡CUENTA REGRESIVA!</h2>
+        <div id="countdown" class="text-black text-2xl bg-white px-6 py-4 rounded shadow inline-block"></div>
+        <p class="mt-4 text-black">28 de junio | 20:00 p.m.<br />Salón Alvear<br />Av. Corrientes 1998</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3543.249148169932!2d-55.9042104247589!3d-27.367933376378723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457be2fc57b8f53%3A0xa95524fae778f19c!2sSalon%20Alvear!5e0!3m2!1ses-419!2sar!4v1745415564477!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       
+        <a href="#confirmar" class="mt-4 block underline text-sm">CONFIRMÁ TU ASISTENCIA</a>
+      </div>
+    </section>
+
+    <!-- Detalles importantes -->
+    <section class="bg-white py-16 text-center">
+      <h2 class="text-3xl font-bold mb-8">DETALLES IMPORTANTES</h2>
+      <div class="flex flex-col md:flex-row justify-center gap-10 px-4">
+        <div >
+          <img src="image3.jpeg" class="w-64 mx-auto rounded-full" />
+          <p class="mt-2 text-sm text-black">VESTIMENTA<br /><strong>¡Elegante!</strong></p>
+        </div>
+        <div>
+          <img src="image4.jpeg" class="w-64 mx-auto rounded-full" />
+          <p class="mt-2 text-sm text-black">TRAE UN REGALO<br /><strong>CBU: 02029302382309</strong><br> <strong>Alias:wkenwfjnrejher</strong>  </p>
+          <p class="mt-4 text-center underline">
+            <a href="https://www.mercadopago.com.ar/" target="_blank" 
+            rel="noopener noreferrer">ENVIAR REGALO!</a>
+        </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparte tus fotos -->
+    <section class="py-16">
+      <h2 class="text-3xl font-bold text-center mb-6">COMPARTE TUS FOTOS!</h2>
+      <div class="max-w-2xl mx-auto text-black px-4">
+        <p class="font-bold">¡Compartí tus recuerdos de esta noche mágica!</p>
+        <p class="mt-2">Queremos que esta celebración quede grabada para siempre, y vos sos parte de eso.</p>
+        <p class="mt-2">Subí tus fotos y videos a nuestra carpeta compartida.</p>
+        <p class="mt-2">El día del evento vas a poder escanear este código QR para acceder a todas las fotos:</p>
+        <div class="flex justify-center mt-4">
+          <img src="image.png" alt="QR" class="w-40" />
+        </div>
+        <p class="mt-4 text-center underline">
+            <a href="https://drive.google.com/drive/folders/1k6OeK7qU6lpKkbj2yRjXKwlHPlimQH7x?usp=drive_link" target="_blank" 
+            rel="noopener noreferrer">ENVIÁLAS AQUÍ</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Confirmación asistencia -->
+    <section id="confirmar" class="bg-white py-16 px-4">
+      <h2 class="text-3xl font-bold text-center mb-6">CONFIRMA TU ASISTENCIA!</h2>
+      <form method="post" action="https://script.google.com/macros/s/AKfycbybWFJE6OIut7-3JXgLLfNcf3Btmb0EFAIJMnI3awM-XenOWauSU-N3hgvWMHd-iGGuOw/exec"name="contact-form" class="max-w-xl mx-auto space-y-4 text-black">
+        <div>
+          <label for="nombre" class="block mb-1 font-semibold">Nombre</label>
+          <input type="text" id="nombre" name="nombre" class="w-full border rounded px-3 py-2" required />
+        </div>
+        <div>
+          <label class="block font-semibold mb-1">¿Vas a asistir?</label>
+          <div class="flex gap-4 items-center">
+            <label class="inline-flex items-center">
+              <input type="radio" name="asistencia" value="si" class="mr-2" /> Sí
+            </label>
+            <label class="inline-flex items-center">
+              <input type="radio" name="asistencia" value="no" class="mr-2" /> No
+            </label>
+          </div>
+        </div>
+        <div>
+          <label for="mensaje" class="block mb-1 font-semibold">¿Qué música no puede faltar?</label>
+          <input type="text" id="mensaje" name="mensaje" class="w-full border rounded px-3 py-2" />
+        </div>
+        <button type="submit" class="bg-[#a88f4d] text-white px-6 py-2 rounded shadow mt-4 hover:bg-[#917b3e]">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Script cuenta regresiva -->
+    <script>
+      const countdown = document.getElementById('countdown');
+      const eventDate = new Date('2025-06-28T20:00:00');
+      setInterval(() => {
+        const now = new Date();
+        const diff = eventDate - now;
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+        countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+      }, 1000);
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbybWFJE6OIut7-3JXgLLfNcf3Btmb0EFAIJMnI3awM-XenOWauSU-N3hgvWMHd-iGGuOw/exec';
+        const form = document.forms ['contact-form'];
+    
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => alert("¡Gracias por confirmar!"))
+            .then(() => window.location.reload())
+            .catch(error => console.error('Error!', error.message));
+        });
+      </script>
+      <!-- Scripts -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>
