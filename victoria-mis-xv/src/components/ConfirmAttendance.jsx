@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function ConfirmarAsistencia() {
+function ConfirmAttendance() {
   const [mensajeVisible, setMensajeVisible] = useState(false);
 
   const handleSubmit = (e) => {
@@ -60,4 +60,4 @@ function ConfirmarAsistencia() {
   );
 }
 
-export default ConfirmarAsistencia;
+export default ConfirmAttendance;

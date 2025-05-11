@@ -1,11 +1,11 @@
-import './App.css'
+import './styles/App.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Navbar from './components/Navbar';
 import CountdownTimer from './components/CountdownTimer';
 import PhotoCarousel from './components/PhotoCarousel';
-import ConfirmarAsistencia from './components/ConfirmarAsistencia';
+import ConfirmAttendance from './components/ConfirmAttendance';
 import CoverSection from './components/CoverSection';
 
 
@@ -99,7 +99,7 @@ function App() {
         <section id="fotos" className="py-20 text-center" data-aos="fade-up">
           <PhotoCarousel />
         </section>
-        <ConfirmarAsistencia />
+        <ConfirmAttendance />
       </div>
     </>
   )
