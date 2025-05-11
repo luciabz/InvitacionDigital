@@ -1,6 +1,6 @@
-# 🎉 Digital Invitation - My 15th Birthday
+# 🎉 Digital Invitation - 15th Birthday
 
-Welcome to the repository for my **digital invitation** for my 15th birthday party! This project was made with ❤️ and a lot of excitement to share all the event details in a modern, interactive, and mobile-friendly way.
+Welcome to the repository for my **digital invitation**  This project was made with ❤️ and a lot of excitement to share all the event details in a modern, interactive, and mobile-friendly way.
 
 ## 🌐 Live Website
 
