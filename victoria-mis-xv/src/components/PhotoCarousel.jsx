@@ -5,11 +5,11 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const images = [
-  '/imagenes/fondo.jpeg',
-  '/imagenes/image.png',
-  '/imagenes/image3.jpeg',
-  '/imagenes/image4.jpeg',
-  '/imagenes/imagen2.jpeg',
+  'public/imagenes/sesion1.jpeg',
+  'public/imagenes/sesion2.jpeg',
+  'public/imagenes/sesion3.jpeg',
+  'public/imagenes/sesion4.jpeg',
+
 ];
 
 const PhotoCarousel = () => (

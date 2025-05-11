@@ -9,15 +9,14 @@ function ConfirmarAsistencia() {
     const form = e.target;
     const scriptURL = 'https://script.google.com/macros/s/AKfycbybWFJE6OIut7-3JXgLLfNcf3Btmb0EFAIJMnI3awM-XenOWauSU-N3hgvWMHd-iGGuOw/exec';
 
-    // Aquí enviamos el formulario con fetch
     fetch(scriptURL, {
       method: 'POST',
       body: new FormData(form),
     })
       .then((response) => {
         if (response.ok) {
-          form.classList.add("hidden"); // Esconde el formulario
-          setMensajeVisible(true); // Muestra el mensaje de éxito
+          form.classList.add("hidden"); 
+          setMensajeVisible(true); 
         }
       })
       .catch((error) => console.error('Error al enviar el formulario:', error));
@@ -26,9 +25,10 @@ function ConfirmarAsistencia() {
   return (
     <section id="confirmar" className="bg-white py-16 px-4" data-aos="fade-up">
       <div className="max-w-2xl mx-auto bg-white/80 backdrop-blur-md rounded-2xl shadow-2xl p-8 border border-white/50">
-        <h2 className="text-3xl font-bold text-center mb-6 font-[Outfit]">CONFIRMA TU ASISTENCIA!</h2>
         <form onSubmit={handleSubmit} method="post" action="" name="contact-form" className="max-w-xl mx-auto space-y-4 text-black">
           <div>
+            <h2 className="text-3xl font-bold text-center mb-6 font-[Outfit]">CONFIRMA TU ASISTENCIA!</h2>
+
             <label htmlFor="nombre" className="block mb-1  font-[Outfit]">Nombre</label>
             <input type="text" id="nombre" name="nombre" className="w-full border shadow-lg rounded px-3 py-2" required />
           </div>

@@ -10,7 +10,7 @@ const CountdownTimer = () => {
       <span>{days}d {hours}h {minutes}m {seconds}s</span>
     );
 
-  return <Countdown date={eventDate} renderer={renderer} />;
+  return<Countdown date={eventDate} renderer={renderer} />;
 };
 
 export default CountdownTimer;

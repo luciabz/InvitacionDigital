@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white shadow-md fixed w-full z-50 top-0">
-      <div className=" flex justify-between items-center px-6 py-3 text-[#a88f4d]">
+      <div className=" mx-auto px-4 py-3 flex justify-between items-center">
         <div className="text-2xl font-bold text-[#a88f4d]">Victoria Mis XV</div>
 
         {/* Botón hamburguesa (móvil) */}

@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import CountdownTimer from './components/CountdownTimer';
 import PhotoCarousel from './components/PhotoCarousel';
 import ConfirmarAsistencia from './components/ConfirmarAsistencia';
+import CoverSection from './components/CoverSection';
 
 
 function App() {
@@ -21,24 +22,10 @@ function App() {
     <>
       <div className="w-full overflow-hidden bg-[#fefdfc] text-[#a88f4d]">
         <Navbar />
+        <CoverSection />
 
-       <section
-  id="inicio"
-  className="relative h-screen w-full bg-cover bg-center"
-  style={{ backgroundImage: "url('/imagenes/fondo.jpeg')" }}
->
-  <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4" data-aos="fade-up">
-    <h1 className="text-5xl font-bold tracking-widest relative before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-r before:from-white/30 before:to-white/5 before:blur-sm before:animate-pulse font-[Outfit]">
-      V I C T O R I A
-    </h1>
-    <h2 className="text-3xl mt-2 font-[Outfit]">MIS XV</h2>
-    <p className="mt-4 text-lg tracking-widest font-[Outfit]">¡ESTÁS INVITADO!</p>
-  </div>
-</section>
-
-        
         <section id="cuenta-regresiva" className="flex flex-col items-center py-16" data-aos="zoom-in">
-          <img src="/imagenes/imagen2.jpeg" alt="Cuenta regresiva" className="w-64 mb-8 rounded-lg shadow-lg" />
+          <img src="public/imagenes/imagen2.jpeg" alt="Cuenta regresiva" className="w-64 mb-8 rounded-lg shadow-lg" />
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-4 font-[Outfit]">¡CUENTA REGRESIVA!</h2>
             <div className="text-black text-2xl bg-white px-6 py-4 rounded shadow-lg inline-block font-[Outfit]">
@@ -66,11 +53,11 @@ function App() {
             </a>
           </div>
         </section>
-<section className="bg-white py-16 text-center" data-aos="fade-up">
+<section id="detalles" className="bg-white py-16 text-center" data-aos="fade-up">
   <h2 className="text-3xl font-bold mb-8 font-[Outfit]">DETALLES IMPORTANTES</h2>
   <div className="flex flex-col md:flex-row justify-center gap-10 px-4">
     <div>
-      <img src="/imagenes/image3.jpeg" className="w-64 mx-auto rounded-full" alt="Vestimenta" />
+      <img src="public/imagenes/image3.jpeg" className="w-64 mx-auto rounded-full" alt="Vestimenta" />
       <p className="mt-2 text-sm text-black font-[Outfit]">VESTIMENTA<br /><strong>¡Elegante!</strong></p>
     </div>
     <div>
@@ -78,7 +65,7 @@ function App() {
       <p className="mt-2 text-sm text-black font-[Outfit]">
         TRAE UN REGALO<br />
         <strong>CBU: 0000003100022159144965</strong><br />
-        <strong>Alias: vikilaloca</strong>
+        <strong>Alias: aliasUsuario</strong>
       </p>
       <p className="mt-4 text-center font-[Outfit] underline">
         <a href="https://www.mercadopago.com.ar/" target="_blank" rel="noopener noreferrer">ENVIAR REGALO!</a>
@@ -102,10 +89,14 @@ function App() {
     </p>
   </div>
 </section>
-
-        {/* FOTOS */}
+        <section className="bg-[#fefdfc] py-16 text-center" data-aos="fade-up">
+       
+          <p className="mb-4 text-black font-[Outfit]">¡Gracias por ser parte de este día tan especial!</p>
+          <p className="mb-4 text-black font-[Outfit]">¡Esperamos que lo disfrutes!</p>
+          <p className="mb-4 text-black font-[Outfit]">¡Nos vemos pronto!</p>
+          <p className="mb-4 text-black font-[Outfit]">¡Con amor, Victoria!</p>
+          </section> 
         <section id="fotos" className="py-20 text-center" data-aos="fade-up">
-          <h2 className="text-3xl font-bold mb-4">Comparte tus fotos</h2>
           <PhotoCarousel />
         </section>
         <ConfirmarAsistencia />
