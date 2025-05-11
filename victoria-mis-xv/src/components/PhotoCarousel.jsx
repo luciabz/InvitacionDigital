@@ -5,10 +5,10 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const images = [
-  'public/imagenes/sesion1.jpeg',
-  'public/imagenes/sesion2.jpeg',
-  'public/imagenes/sesion3.jpeg',
-  'public/imagenes/sesion4.jpeg',
+  'imagenes/sesion1.jpeg',
+  'imagenes/sesion2.jpeg',
+  'imagenes/sesion3.jpeg',
+  'imagenes/sesion4.jpeg',
 
 ];
 

@@ -25,7 +25,7 @@ function App() {
         <CoverSection />
 
         <section id="cuenta-regresiva" className="flex flex-col items-center py-16" data-aos="zoom-in">
-          <img src="public/imagenes/imagen2.jpeg" alt="Cuenta regresiva" className="w-64 mb-8 rounded-lg shadow-lg" />
+          <img src="imagenes/imagen2.jpeg" alt="Cuenta regresiva" className="w-64 mb-8 rounded-lg shadow-lg" />
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-4 font-[Outfit]">¡CUENTA REGRESIVA!</h2>
             <div className="text-black text-2xl bg-white px-6 py-4 rounded shadow-lg inline-block font-[Outfit]">
@@ -57,7 +57,7 @@ function App() {
   <h2 className="text-3xl font-bold mb-8 font-[Outfit]">DETALLES IMPORTANTES</h2>
   <div className="flex flex-col md:flex-row justify-center gap-10 px-4">
     <div>
-      <img src="public/imagenes/image3.jpeg" className="w-64 mx-auto rounded-full" alt="Vestimenta" />
+      <img src="imagenes/image3.jpeg" className="w-64 mx-auto rounded-full" alt="Vestimenta" />
       <p className="mt-2 text-sm text-black font-[Outfit]">VESTIMENTA<br /><strong>¡Elegante!</strong></p>
     </div>
     <div>

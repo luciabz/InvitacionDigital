@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className=" mx-auto px-4 py-3 flex justify-between items-center">
         <div className="text-2xl font-bold text-[#a88f4d]">Victoria Mis XV</div>
 
-        {/* Botón hamburguesa (móvil) */}
+       
         <button
           className="text-[#a88f4d] lg:hidden focus:outline-none"
           onClick={toggleMenu}
@@ -20,7 +20,7 @@ const Navbar = () => {
           ☰
         </button>
 
-        {/* Menú (escritorio) */}
+        
         <ul className="hidden md:flex lg:flex space-x-6 text-[#a88f4d] font-semibold">
           <li><a href="#inicio" className="hover:underline">Inicio</a></li>
           <li><a href="#cuenta-regresiva" className="hover:underline">Cuenta</a></li>
@@ -30,7 +30,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      {/* Menú desplegable (móvil) */}
+      
       {menuOpen && (
         <ul className="lg:hidden bg-white px-4 pb-4 space-y-2 text-[#a88f4d] font-semibold">
           <li><a href="#inicio" onClick={toggleMenu}>Inicio</a></li>
