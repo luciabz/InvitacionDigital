@@ -7,7 +7,7 @@ const Navbar = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <nav className="bg-white shadow-md fixed w-full z-50 top-0">
+    <nav className=" shadow-md fixed w-full z-50 top-0">
       <div className=" mx-auto px-4 py-3 flex justify-between items-center">
         <div className="text-2xl font-bold text-[#a88f4d]">Victoria Mis XV</div>
 

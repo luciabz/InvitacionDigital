@@ -49,7 +49,7 @@ function App() {
               className="mx-auto mt-4 rounded-lg shadow"
             ></iframe>
             <a href="#confirmar" className="mt-4 block underline text-sm font-[Outfit]">
-              CONFIRMÁ TU ASISTENCIA
+              CONFIRMÁ TU ASISTENCIA (antes del 14 de junio)
             </a>
           </div>
         </section>
@@ -65,7 +65,7 @@ function App() {
       <p className="mt-2 text-sm text-black font-[Outfit]">
         TRAE UN REGALO<br />
         <strong>CBU: 0000003100022159144965</strong><br />
-        <strong>Alias: aliasUsuario</strong>
+        <strong>Alias: vicvicvic.</strong>
       </p>
       <p className="mt-4 text-center font-[Outfit] underline">
         <a href="https://www.mercadopago.com.ar/" target="_blank" rel="noopener noreferrer">ENVIAR REGALO!</a>

@@ -3,7 +3,7 @@ const CoverSection = () => {
     <section
       id="inicio"
   className="relative h-screen w-full bg-cover bg-center"
-  style={{ backgroundImage: "url('/imagenes/fondo.jpeg')" }}
+  style={{ backgroundImage: "url('/imagenes/v (8).jpeg')" }}
 >
   <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4" data-aos="fade-up">
     <h1 className="text-5xl font-bold tracking-widest relative before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-r before:from-white/30 before:to-white/5 before:blur-sm before:animate-pulse font-[Outfit]">
