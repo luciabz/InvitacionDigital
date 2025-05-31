@@ -35,7 +35,7 @@ const PhotoCarousel = () => (
   >
     {images.map((src, idx) => (
       <SwiperSlide key={idx}>
-        <img src={src} alt={`Slide ${idx}`} className="rounded-xl mask-b-from-30%" />
+        <img src={src} alt={`Slide ${idx}`} className="rounded-xl mask-b-from-30% w-full" />
       </SwiperSlide>
     ))}
   </Swiper>

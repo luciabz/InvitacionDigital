@@ -7,6 +7,8 @@ function ConfirmAttendance() {
     e.preventDefault();
 
     const form = e.target;
+    setMensajeVisible(true); // Mostrar mensaje inmediatamente
+  form.classList.add("hidden"); 
     const scriptURL = 'https://script.google.com/macros/s/AKfycbybWFJE6OIut7-3JXgLLfNcf3Btmb0EFAIJMnI3awM-XenOWauSU-N3hgvWMHd-iGGuOw/exec';
 
     fetch(scriptURL, {
