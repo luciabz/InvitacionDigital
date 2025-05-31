@@ -49,7 +49,7 @@ function App() {
               className="mx-auto mt-4 rounded-lg shadow"
             ></iframe>
             <a href="#confirmar" className="mt-4 block underline text-sm font-[Outfit]">
-              CONFIRMÁ TU ASISTENCIA (antes del 14 de junio)
+              CONFIRMÁ TU ASISTENCIA ANTES DEL 14/06
             </a>
           </div>
         </section>
