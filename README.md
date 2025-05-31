@@ -1,86 +1,76 @@
-# 🎉 Digital Invitation - 15th Birthday
+# Invitación Digital
 
-Welcome to the repository for my **digital invitation**  This project was made with ❤️ and a lot of excitement to share all the event details in a modern, interactive, and mobile-friendly way.
+Este proyecto consiste en una **invitación digital interactiva** creada como parte de una aplicación web para eventos. Está desarrollada utilizando **React**, **Vite**, **Tailwind CSS** y **Redux**. La invitación incluye funcionalidades como una **cuenta regresiva**, un **formulario de confirmación** de asistencia, y una **galería de fotos**, todo con un diseño responsivo y moderno.
 
-## 🌐 Live Website
 
-🔗 [View live invitation](https://victoria-mis-xv.netlify.app/)
+## Características
 
-## ✨ Features
+- **Cuenta regresiva**: Muestra el tiempo restante hasta el evento.
+- **Formulario de confirmación**: Permite a los invitados confirmar su asistencia y dejar un mensaje sobre su música favorita.
+- **Galería de fotos**: Carrusel para mostrar imágenes relacionadas con el evento.
+- **Responsive**: Diseño adaptado a diferentes tamaños de pantalla (móvil, tablet, desktop).
+- **Animaciones AOS**: Efectos de animación al hacer scroll en las secciones.
 
-- ⏳ **Countdown timer** until the big day.
-- 📅 **Event details** (when, where, dress code).
-- 🖼️ **Photo gallery** and interactive carousel.
-- 📩 **RSVP form** to confirm attendance.
-- 📱 **Responsive design** for mobile, tablet, and desktop.
-- 💫 Scroll-triggered **animations** for a smooth and elegant experience.
+## Tecnologías Utilizadas
 
-## 🛠️ Built With
+- **React**: Para la construcción de interfaces de usuario interactivas.
+- **Vite**: Herramienta de desarrollo rápida para React.
+- **Tailwind CSS**: Framework de diseño para la creación de interfaces modernas y responsivas.
+- **Redux**: Manejo global del estado, utilizado en la rama `redux-rsvp` para gestionar el estado de confirmaciones de asistencia.
+- **AOS**: Librería para animaciones al hacer scroll.
+- **Swiper**: Carrusel de imágenes para la galería de fotos.
 
-- **React** + **Vite**
-- **Tailwind CSS** for fast and responsive styling
-- **Swiper** for the image carousel
-- **AOS (Animate On Scroll)** for scroll animations
-- **EmailJS / FormSubmit** (optional) for the RSVP form
+## Instalación
 
-## 📁 Project Structure
+1. Clona el repositorio:
 
-```plaintext
-victoria-mis-xv/
-│
-├── dist/                     # Production build output
-│   ├── index.html
-│   └── assets/
-│
-├── public/
-│   └── imagenes/             # Static image assets
-│
-├── src/
-│   ├── components/
-│   │   ├── ConfirmarAsistencia.jsx
-│   │   ├── CountdownTimer.jsx
-│   │   ├── CoverSection.jsx
-│   │   ├── Navbar.jsx
-│   │   └── PhotoCarousel.jsx
-│   ├── App.jsx
-│   ├── App.css
-│   ├── index.css
-│   └── main.jsx
-│
-├── .gitignore
-├── index.html
-├── package.json
-├── package-lock.json
-├── vite.config.js
-├── README.md
-└── .eslintrc.js
-
-## 🚀 Getting Started
-
-1. Clone this repo:
 ```bash
-git clone https://github.com/luciabz/victoria-mis-xv.git
-Navigate to the project folder
-
-
-cd victoria-mis-xv
-Install dependencies
-
-
+git clone https://github.com/tu_usuario/InvitacionDigital.git
+```
+2.Navega a la carpeta del proyecto:
+```bash
+cd Victoria-mis-xv
+```
+3.Instala las dependencias:
+```bash
 npm install
-Start the development server
-
-
+```
+4.Inia el servidor de desarrollo
+```bash
 npm run dev
-Open your browser at http://localhost:5173
+```
+5.Abre tu navegador y visita:
+```bash
+http://localhost:5173
 
-📦 Build for Production
-bash
+```
+Estructura del Proyecto
 
-npm run build
+```bash
 
-🎀 Credits
-Made with 💜 by Lucia Benitez
-Inspired by Victoria's 15th birthday celebration ✨
+/src
+│
+├── /components         # Componentes reutilizables (Navbar, CoverSection, etc.)
+├── /redux              # Configuración de Redux (store y slice) [Disponible en la rama 'redux-rsvp']
+├── /styles             # Archivos CSS (Tailwind y otros estilos)
+├── /App.jsx
+├── /main.jsx
+
+
+
+```
+## Configuracion de Redux 
+La funcionalidad de Redux para el manejo de la confirmación de asistencia se encuentra en la rama redux-rsvp. La implementación incluye:
+
+store.js: Configura el store de Redux.
+
+rsvpSlice.js: Define el slice para manejar el estado de la confirmación de asistencia.
+
+Para trabajar con Redux, debes cambiar a la rama redux-rsvp:
+```bash
+git checkout redux-rsvp
+```
+Esta configuración permite gestionar de manera global el estado de la confirmación de asistencia de los usuarios.
+
 
 
